@@ -20,9 +20,14 @@ class School
   end 
   
   def sort
-    
-    self.roster = self.roster.sort 
-    self.roster
-    
-  end  
+    y = {}
+    k = self.roster.keys.sort 
+    k.each do |key|
+      y[key] = []
+    end 
+    self.roster.each do |grade, array|
+      y[grade] << array.sort 
+    end 
+    y 
+  end 
 end 
