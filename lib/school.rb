@@ -21,7 +21,7 @@ class School
   
   def sort
     y = {}
-    k = self.roster.keys.sort 
+    k = self.roster.keys 
     k.each do |key|
       y[key] = []
     end 
