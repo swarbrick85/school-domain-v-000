@@ -26,7 +26,8 @@ class School
       y[key] = []
     end 
     self.roster.each do |grade, array|
-      array.each do |name|
+      a = array.sort 
+      a.each do |name|
       y[grade] << name 
       end 
     end 
